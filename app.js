@@ -13,7 +13,8 @@ var app = express();
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
-app.set('port',3001);
+const PORT = process.env.PORT || 80; 
+app.set('port',PORT);
 
 app.use(logger('dev'));
 app.use(express.json());
