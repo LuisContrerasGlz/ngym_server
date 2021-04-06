@@ -55,8 +55,11 @@ router.get('/', function(req, res, next) {
           res.json(socios);
         }
   } );
-  
 
 });
+
+
+//})  
+
 
 module.exports = router;
