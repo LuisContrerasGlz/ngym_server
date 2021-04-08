@@ -3,14 +3,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
+var cors= require('cors');
 var pagosRouter = require('./routes/pagos');
 var usersRouter = require('./routes/users');
 var rep_pagosRouter = require('./routes/rep_pagos');
 var ins_userRouter = require('./routes/ins_user');
-
-
-
+var userRouter = require('./routes/user');
+var act_userRouter = require('./routes/act_user');
 var app = express();
 
 // view engine setup
@@ -19,6 +18,11 @@ app.set('view engine', 'jade');
 const PORT = process.env.PORT || 80; 
 //const PORT=3001;
 app.set('port',PORT);
+
+app.use(cors());
+
+
+
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -44,6 +48,9 @@ app.use('/pagos', pagosRouter);
 app.use('/users', usersRouter);
 app.use('/rep_pagos', rep_pagosRouter);
 app.use('/ins_user', ins_userRouter);
+app.use('/user', userRouter);
+app.use('/act_user', act_userRouter);
+
 
 
 // catch 404 and forward to error handler
