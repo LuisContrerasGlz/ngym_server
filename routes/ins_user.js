@@ -15,6 +15,15 @@ var conn=mysql.createConnection({
   password: "mjmk28u3s3rlad48"
 })
 
+/*
+var conn=mysql.createConnection({
+  host: "localhost",
+  database: "gym",
+  user: "root",
+  password: ""
+})
+*/
+
 conn.connect(function(error){
   if (error){
       console.log("coneccion con error", error);

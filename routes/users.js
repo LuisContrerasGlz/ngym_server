@@ -6,6 +6,7 @@ const { v4: uuidv4 } = require('uuid');
 
 var mysql = require("mysql");
 
+
 var conn=mysql.createConnection({
   host: "xlf3ljx3beaucz9x.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
   database: "umgtiz0f2ufm2alq",
@@ -13,6 +14,14 @@ var conn=mysql.createConnection({
   password: "mjmk28u3s3rlad48"
 })
 
+/*
+var conn=mysql.createConnection({
+  host: "localhost",
+  database: "gym",
+  user: "root",
+  password: ""
+})
+*/
 conn.connect(function(error){
   if (error){
       console.log("coneccion con error", error);

@@ -10,6 +10,7 @@ var rep_pagosRouter = require('./routes/rep_pagos');
 var ins_userRouter = require('./routes/ins_user');
 var userRouter = require('./routes/user');
 var act_userRouter = require('./routes/act_user');
+var ins_pagoRouter = require('./routes/ins_pago');
 var app = express();
 
 // view engine setup
@@ -50,6 +51,7 @@ app.use('/rep_pagos', rep_pagosRouter);
 app.use('/ins_user', ins_userRouter);
 app.use('/user', userRouter);
 app.use('/act_user', act_userRouter);
+app.use('/ins_pago', ins_pagoRouter);
 
 
 
