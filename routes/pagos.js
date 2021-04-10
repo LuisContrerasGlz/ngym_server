@@ -13,6 +13,7 @@ var conn=mysql.createConnection({
   password: "mjmk28u3s3rlad48"
 })
 
+
 /*
 var conn=mysql.createConnection({
   host: "localhost",
@@ -20,8 +21,8 @@ var conn=mysql.createConnection({
   user: "root",
   password: ""
 })
-*/
 
+*/
 
 conn.connect(function(error){
   if (error){

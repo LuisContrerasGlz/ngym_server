@@ -16,6 +16,7 @@ var conn=mysql.createConnection({
   password: "mjmk28u3s3rlad48"
 })
 
+
 /*
 var conn=mysql.createConnection({
     host: "localhost",
@@ -49,9 +50,9 @@ router.post('/', function(req, res, next) {
 
   const ins_soc="insert into pagos (id_socio, monto, fecha_sig_pago)";
   const ins_soc2=ins_soc+"values ('"+id+"',"+monto+",'"+np+"')" ;
-  console.log("-------------------------------------------");
+  console.log("fffffffffffffffffffff-------------------------------------------");
   console.log(ins_soc2);  
-  console.log("-------------------------------------------");
+  console.log("ffffffffffffffffffff-------------------------------------------");
   conn.query(ins_soc2,function(error, results){
     if (error){
       console.log("error de consulta ", error);
