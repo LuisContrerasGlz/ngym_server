@@ -49,7 +49,7 @@ router.post('/', function(req, res, next) {
 
 
   const ins_soc="insert into pagos (id_socio, monto, fecha_sig_pago)";
-  const ins_soc2=ins_soc+"values ('"+id+"',"+monto+",'"+np+"')" ;
+  const ins_soc2=ins_soc+"values ("+id+","+monto+",'"+np+"')" ;
   console.log("fffffffffffffffffffff-------------------------------------------");
   console.log(ins_soc2);  
   console.log("ffffffffffffffffffff-------------------------------------------");
